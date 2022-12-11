@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/main"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical">
+
+    <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:background="#000000">
+
+        <DigitalClock
+              android:id="@+id/launcher_time"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="35dp"
+              android:layout_marginTop="35dp"
+              android:textAllCaps="true"
+              android:textSize="48sp"
+              android:fontFamily="sans-serif-thin"
+              android:background="#000000"
+              android:textColor="#ffffff" />
+
+        <TextView
+              android:id="@+id/launcher_date"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="35dp"
+              android:textSize="24sp"
+              android:fontFamily="sans-serif-thin"
+              android:background="#000000"
+              android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="fill_parent">
+
+        <ListView
+              android:id="@+id/app_list"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="35dp"
+              android:scrollbarThumbVertical="@android:color/white"
+              android:scrollbarSize="1dp"
+              android:divider="@null"
+              android:background="#000000" />
+
+    </LinearLayout>
+
+</LinearLayout>
